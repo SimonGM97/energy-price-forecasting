@@ -1,0 +1,3 @@
+S3:
+  bucket: energy-price-forecasting
+  region: sa-east-1

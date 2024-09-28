@@ -25,13 +25,9 @@ AWS Secret Access Key: AWS_SECRET_ACCESS_KEY
 Default region name: sa-east-1
 Default output format: json
 ```
-3. Clone the `PyTradeX` CodeCommit repository:
+3. Clone the `energy-price-forecasting` Github repository:
 ```bash
-git config --global credential.helper '!aws codecommit credential-helper $@'
-git config --global credential.UseHttpPath true
-git config --global user.email "simongmorillo1@gmail.com"
-git config --global user.name "simon.garcia.morillo"
-git clone https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/PyTradeX
+git clone https://github.com/SimonGM97/energy-price-forecasting.git
 ```
 4. Create & activate python virtual environment:
 ```bash
@@ -42,23 +38,4 @@ source .price_forecasting_env/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-  - *Note that this command will also install the dependencies, specified in `requirements.txt`.*
-6. Install & run the [Docker Desktop](https://docs.docker.com/engine/install/) application (if it's not already installed). 
-7. Set the `ECR` environment variables to pull images from the `pytradex-ecr` ECR repository:
-```bash
-export ECR_REPOSITORY_NAME=pytradex-ecr
-export ECR_REPOSITORY_URI=097866913509.dkr.ecr.sa-east-1.amazonaws.com
-export REGION=sa-east-1
-```
-8. Pull the docker images stored in the `ed-ml-docker` dockerhub repository:
-```
-chmod +x ./scripts/bash/image_pulling.sh
-./scripts/bash/image_pulling.sh
-```
-- Note that this will pull the following docker images:
-  - `data_processing_image_v1.0.0`
-  - `model_tuning_image_v1.0.0`
-  - `model_updating_image_v1.0.0`
-  - `model_serving_image_v1.0.0`
-  - `inference_image_v1.0.0`
-  - `run_app_image_v1.0.0`
+  - *Note that this command will install the dependencies, specified in `requirements.txt`.*
