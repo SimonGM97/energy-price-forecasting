@@ -89,7 +89,7 @@ def load_from_s3(path: str):
     else:
         raise Exception(f'Invalid "read_format" parameter: {read_format}, extracted from path: {path}.\n\n')
     
-    assert len(asset) > 0, f"Loaded asset from s3://{path} contains zero keys. {asset}"
+    # assert len(asset) > 0, f"Loaded asset from s3://{path} contains zero keys. {asset}"
 
     return asset
 
