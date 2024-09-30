@@ -16,6 +16,7 @@ RUN pip install -r requirements.txt
 RUN pip install awslambdaric
 
 # Copy specified files with proper permissions
+COPY --chown=root:root data_processing data_processing
 COPY --chown=root:root inference inference
 COPY --chown=root:root modeling modeling
 COPY --chown=root:root utils utils

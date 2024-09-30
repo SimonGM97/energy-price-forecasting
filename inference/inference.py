@@ -7,7 +7,6 @@ sys.path.append(project_root)
 
 import pandas as pd
 import json
-from pprint import pformat
 
 from data_processing.data_cleaning import clean_energy_df, clean_weather_df
 from data_processing.feature_engineering import engineer_features
@@ -44,8 +43,15 @@ def lambda_handler(
         show_plots=False
     )
 
+    # Delete energy_df & weather_df from memory
+    del energy_df
+    del weather_df
+
     # Standardize features
     X_stand: pd.DataFrame = standardize_X(X=X)
+
+    # Delete X from memory
+    del X
 
     # Load champion Model
     champion: Model = Model()
@@ -53,6 +59,9 @@ def lambda_handler(
 
     # Prepare X_fcst
     X_fcst: pd.DataFrame = X_stand[champion.selected_features].iloc[-1:]
+
+    # Delete X_stand from memory
+    del X_stand
 
     # Forecast test data
     test_pred = champion.predict(

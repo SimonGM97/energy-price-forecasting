@@ -24,7 +24,7 @@ aws lambda create-function \
     --code ImageUri=${ECR_REPOSITORY_URI}/${ECR_REPOSITORY_NAME}:lambda_pricing_inference_image_${VERSION} \
     --description "Pricing inference lambda function." \
     --architecture x86_64 \
-    --memory-size 1024 \
+    --memory-size 2048 \
     --timeout 120 \
     --region ${REGION} \
     --publish
