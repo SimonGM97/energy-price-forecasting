@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" modified="2024-10-01T20:04:41.604Z" version="21.6.8" etag="cKJNpjJfLJ-C_9Pp60hy" type="device" pages="2">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" modified="2024-10-01T22:46:11.112Z" version="21.6.8" etag="IxJvetlxK2PW4pdqhSvi" type="device" pages="2">
   <diagram name="ML Pipelines" id="c7488fd3-1785-93aa-aadb-54a6760d102a">
     <mxGraphModel dx="1774" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -176,7 +176,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="nZqWVI4Nt3j7B71pAX12" name="Architecture">
-    <mxGraphModel dx="1461" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1461" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -242,6 +242,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="2lw2X4CCc4PJ3Vx7WqBR-2" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;strokeWidth=2;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ouTSIaOp6I1x_py3_BLi-13" target="2lw2X4CCc4PJ3Vx7WqBR-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2lw2X4CCc4PJ3Vx7WqBR-3" value="&lt;b&gt;Logs&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="2lw2X4CCc4PJ3Vx7WqBR-2">
+          <mxGeometry x="-0.0122" y="-3" relative="1" as="geometry">
+            <mxPoint x="24" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ouTSIaOp6I1x_py3_BLi-13" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
           <mxGeometry x="816.25" y="295" width="78" height="78" as="geometry" />
         </mxCell>
@@ -253,6 +261,12 @@
         </mxCell>
         <mxCell id="ouTSIaOp6I1x_py3_BLi-20" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;S3 Bucket&lt;br&gt;&lt;/b&gt;energy-price-forecasting&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="998.25" y="380" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2lw2X4CCc4PJ3Vx7WqBR-1" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F34482;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="1044.25" y="525" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="2lw2X4CCc4PJ3Vx7WqBR-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;CloudWatch&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1033.25" y="615" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
